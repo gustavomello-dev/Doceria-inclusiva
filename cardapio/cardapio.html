@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cardapio.css">
+  <title>Bem me Quer Doces</title>
+</head>
+<body>
+
+  <header>
+    <a href="/index.html"><img src="img/logo bem me quer.png" alt="Logo Bem me Quer" ></a>
+    <h1>Bem me Quer Doces</h1>
+    <div id="buffet">
+      <p id="introducao">Nosso buffet é pensado para todos os gostos e restrições alimentares, Nossos doces combinam sabor e cuidado: zero lactose, zero açúcar, veganos, naturais e livres de glúten.</p>
+    </div>
+  </header>
+
+  <div id="busca">
+    <input type="text" placeholder="doces" id="input_filter">
+  </div>
+
+  <div class="container">
+
+    
+
+    <section id="lactose">
+      <h2>🍫 Doce Zero Lactose</h2>
+      <div class="produtos" data-js="proum">
+      </div>
+    </section>
+
+    <section id="acucar">
+      <h2>🍯 Doce Zero Açúcar</h2>
+      <div class="produtos" data-js="prodois">
+      </div>
+    </section>
+  </div>
+<img src="img/Imagem10 copy.png" alt="">
+
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <img id="modalImg" src="" alt="">
+      <h3 id="modalNome"></h3>
+      <p id="modalDescricao"></p>
+      <p id="modalValor"></p>
+      <button id="fazerPedido">Fazer Pedido</button>
+    </div>
+</div>
+
+<div id="carrinho" class="carrinho">
+  <div class="item-carrinho">
+    <h2>🛒 Meus Pedidos</h2>
+    <span id="closeCarrinho" class="close">&times;</span>
+    <ul id="texto"></ul>
+    <div>
+      <button id="finalizarPedido">✅ Finalizar Pedido</button>
+      <button id="limparCarrinho">🗑️ Limpar Carrinho</button>
+    </div>
+  </div>
+</div>
+
+<div id="icon-carrinho">
+      <p>🛒</p>
+      <div id="couter">
+        <p id="text_couter">0</p>
+      </div>
+</div>
+
+
+<div id="icon-what">
+  <img src="img/icons8-whatsapp-480.png" alt="whatsapp">
+</div>
+
+  <footer>
+    <p>© 2025 Bem me Quer Doces - Todos os direitos reservados</p>
+  </footer>
+<script type="module" src="cardapio.js"></script>
+</body>
+</html>
