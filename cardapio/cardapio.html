@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="cardapio.css">
+  <link rel="stylesheet" href="mobile.css">
   <title>Bem me Quer Doces</title>
 </head>
 <body>
@@ -42,11 +43,16 @@
   <div id="modal" class="modal">
     <div class="modal-content">
       <span id="closeModal" class="close">&times;</span>
-      <img id="modalImg" src="" alt="">
-      <h3 id="modalNome"></h3>
-      <p id="modalDescricao"></p>
-      <p id="modalValor"></p>
-      <button id="fazerPedido">Fazer Pedido</button>
+      <div id="itens_modal">
+        <img id="modalImg" src="" alt="">
+        <h3 id="modalNome"></h3>
+        <p id="modalDescricao"></p>
+        <p id="modalValor"></p>
+      </div>
+      <div id="btn_inp">
+        <input type="number" placeholder="Digite a Quantidade Desejada" id="input_modal">
+        <button id="fazerPedido">Fazer Pedido</button>
+      </div>
     </div>
 </div>
 
@@ -55,7 +61,7 @@
     <h2>🛒 Meus Pedidos</h2>
     <span id="closeCarrinho" class="close">&times;</span>
     <ul id="texto"></ul>
-    <div>
+    <div id="botoes" >
       <button id="finalizarPedido">✅ Finalizar Pedido</button>
       <button id="limparCarrinho">🗑️ Limpar Carrinho</button>
     </div>

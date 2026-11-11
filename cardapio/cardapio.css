@@ -155,16 +155,72 @@ header {
         background: #fff;
         padding: 20px;
         border-radius: 16px;
-        max-width: 400px;
+        max-width: 450px;
         width: 90%;
-        text-align: center;
+        height: 500px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        #itens_modal{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            flex-direction: column;
+        }
+
+        #btn_inp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 10px;
+            width: 80%;
+
+            input{
+                width: 80%;
+                border: solid 2px black;
+                padding: 3px;
+                font-weight: bold;
+                color: black;
+                
+            }
+
+            input:focus{
+                outline: none;
+                padding-left: 15px;
+            }
+
+            input::placeholder{
+                padding-left: 10px;
+                font-weight: bold;
+                color: black;
+            }
+
+            button{
+                width: 180px;
+                border: solid 2px black;
+                color: black;
+                font-weight: bold;
+                padding: 5px;
+                background-color: antiquewhite;
+            }
+        }
+
     }
 
     & .modal-content img {
-        max-width: 100%;
+        max-width: 80%;
+        min-width: 70%;
+        height: auto;
         border-radius: 8px;
+        text-align: center;
+        object-fit: cover;
     }
 
     & .close {
@@ -180,12 +236,12 @@ header {
     display: none;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.6);
-    justify-content: center;
-    align-items: center;
+    z-index: 99;
+
 
     & .item-carrinho {
         display: flex;
@@ -198,18 +254,37 @@ header {
         border-radius: 16px;
         max-width: 500px;
         width: 90%;
+        height: 100vh;
         text-align: center;
         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        position: relative;
-        
+        position: fixed;
+        right: 0;
 
-        & button{
+        h2{
+            position: absolute;
+            top: 15px;
+        }
+
+        #botoes{
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+
+            & button{
             border: none;
             background-color: #4b2e2e;
             color: #fff;
             padding: 10px;
-
         }
+            
+        }
+        
+
+        
 
         & li{
             margin-bottom: 8px;
